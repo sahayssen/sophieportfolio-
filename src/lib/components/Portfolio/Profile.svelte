@@ -7,13 +7,11 @@ Displays a headshot, name, tagline, contact links, and an optional
 
 USAGE EXAMPLE:
 <Profile
-  name="Jane Smith"
-  tagline="Data journalist covering housing and inequality"
   photo="/photos/jane-smith.jpg"
+  bio="Currently reporting on evictions for The City.
   email="jane@example.com"
   github="janesmith"
   linkedin="janesmith"
-  bio="Currently reporting on evictions for The City.
 
 Next, I'm exploring machine learning tools for document analysis."
 />
@@ -67,7 +65,9 @@ Next, I'm exploring machine learning tools for document analysis."
         <p class="tagline">{tagline}</p>
       {/if}
 
-      <ul class="contact">
+      <ProfileBio text={bio} />
+
+       <ul class="contact">
         {#each contacts as contact (contact.label)}
           <ProfileContactLink
             href={contact.href}
@@ -77,8 +77,6 @@ Next, I'm exploring machine learning tools for document analysis."
           />
         {/each}
       </ul>
-
-      <ProfileBio text={bio} />
     </div>
 
     {#if photo}
@@ -93,10 +91,11 @@ Next, I'm exploring machine learning tools for document analysis."
   @use '$lib/styles' as *;
 
   .profile {
-    border-top: calc(var(--border-width-accent) * 2) solid var(--color-accent);
-    border-bottom: var(--border-width-divider) solid var(--color-border);
-    margin-bottom: var(--spacing-xl);
-    padding: var(--spacing-md) 0;
+    font-family: 'Quantico';
+    color: var(--color-accent);
+    margin-top: -40px;
+    margin-bottom: var(--spacing-lg);
+    padding: 0 0 var(--spacing-md) 0;
   }
 
   .profile-hero {
@@ -111,6 +110,8 @@ Next, I'm exploring machine learning tools for document analysis."
 
   h1 {
     font-size: clamp(3.25rem, 7vw, 4.25rem);
+    font-family: inherit;
+    color: var(--color-accent);
     line-height: var(--leading-tight);
     margin: 0;
     letter-spacing: var(--letter-spacing-tight);
@@ -124,15 +125,12 @@ Next, I'm exploring machine learning tools for document analysis."
   .tagline {
     margin: 0 0 var(--spacing-sm);
     font-size: var(--font-size-xl);
-    color: var(--color-text);
     line-height: var(--leading-caption);
     max-width: 42rem;
   }
 
   .hero-photo-wrap {
-    border: var(--border-width-thin) solid var(--color-border);
-    background: var(--color-white);
-    padding: var(--spacing-xs);
+    padding: var(--spacing-sm);
 
     @include mobile {
       max-width: var(--max-width-image-small);
@@ -159,10 +157,10 @@ Next, I'm exploring machine learning tools for document analysis."
 
   .contact {
     list-style: none;
-    padding: 0;
-    margin: 0 0 var(--spacing-md);
+    padding: 1rem;
+    margin: -12px 0 var(--spacing-md) 0;
     display: flex;
     flex-wrap: wrap;
-    gap: var(--spacing-sm);
+    gap: var(--spacing-md);
   }
 </style>

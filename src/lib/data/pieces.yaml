@@ -1,0 +1,18 @@
+clips:
+  - slug: police
+    title: Police Headquarters Reporter
+    image: /photos/police.jpg
+    imageAlt: Mulberry Street police headquarters in the late 1880s
+    description: A decade of police-beat reporting at 300 Mulberry Street for the New-York Tribune and the Evening Sun.
+
+  - slug: how-the-other-half
+    title: How the Other Half Lives
+    image: /photos/bandits-roost.jpg
+    imageAlt: Bandit's Roost, a Riis photograph of an alley off Mulberry Street, 1888
+    description: A book-length investigation of New York tenement life, illustrated with my own flash photographs of the city after dark.
+
+  - slug: mulberry-bend
+    title: The Battle for Mulberry Bend
+    image: /photos/mulberry-bend.jpg
+    imageAlt: Mulberry Bend before demolition, photographed in the early 1890s
+    description: A sustained crusade to demolish Mulberry Bend, the most notorious slum block in lower Manhattan, and replace it with a public park.

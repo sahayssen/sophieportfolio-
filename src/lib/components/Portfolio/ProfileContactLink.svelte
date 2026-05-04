@@ -29,16 +29,16 @@ and an icon snippet.
     align-items: center;
     gap: var(--spacing-xs);
     text-decoration: none;
-    color: var(--color-text);
+    color: var(--color-accent);
     font-size: var(--font-size-sm);
-    border: var(--border-width-thin) solid var(--color-border);
+    border: var(--border-width-thin) solid var(--color-accent);
     background: var(--color-white);
     padding: var(--spacing-xxs) var(--spacing-xs);
     transition: var(--transition-color);
 
     &:hover {
-      color: var(--color-accent);
-      border-color: var(--color-accent);
+      color: var(--color-text);
+      border-color: var(--color-border);
     }
   }
 
