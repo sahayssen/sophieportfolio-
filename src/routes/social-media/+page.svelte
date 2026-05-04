@@ -7,8 +7,10 @@
   const pieces = data.pieces;
 </script>
 
+<div class="container">
+ <img src="{base}/photos/pixelsocialmedia.png" alt="Sophie Hayssen in blue pixel font">
+</div>
 <div class="container wide">
-<h1> My Social Media Work </h1>
 <CardGrid>
     {#each pieces.clips as clip (clip.title)}
       <Card
