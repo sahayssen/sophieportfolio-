@@ -22,11 +22,11 @@ USAGE EXAMPLE:
   @use '../../styles' as *;
 
   .headline {
-    font-family: var(--font-serif);
+    font-family: 'Quantico';
     font-size: var(--font-size-5xl);
     font-weight: var(--font-weight-bold);
     line-height: var(--leading-tight);
-    color: var(--color-dark);
+    color: var(--color-accent);
     margin-bottom: var(--spacing-sm);
 
     @include tablet {

@@ -25,7 +25,7 @@ USAGE EXAMPLE:
 
 <style lang="scss">
   .kicker {
-    font-family: var(--font-sans);
+    font-family:'Quantico';
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-bold);
     color: var(--color-accent);
@@ -34,7 +34,7 @@ USAGE EXAMPLE:
     margin: 0 0 var(--spacing-xxs);
 
     a {
-      color: inherit;
+      color: var(--color-accent);
       text-decoration: none;
 
       &:hover {
